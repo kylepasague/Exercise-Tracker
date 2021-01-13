@@ -1,0 +1,5 @@
+curl -v --header "Content-Type: application/json" -d "{\"username\":\"kyle\"}" http://localhost:3000/users/add
+curl -v --header "Content-Type: application/json" -d "{\"username\":\"edward\"}" http://localhost:3000/users/add
+curl --header "Content-Type: application/json" --request POST -d '{"username":"kyle","description":"run","duration":9,"date":"2021-01-05T09:02:37.570Z"}' http://localhost:3000/exercises/add
+curl --header "Content-Type: application/json" --request POST -d '{"username":"kylee","description":"runs","duration":19,"date":"2021-01-08T09:02:37.570Z"}' http://localhost:3000/exercises/update/5ff42edad81da11714c84abb
+curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/exercises/5ff42edad81da11714c84abb
